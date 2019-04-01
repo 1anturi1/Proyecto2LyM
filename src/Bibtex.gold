@@ -17,9 +17,65 @@ procedure main(args:String[]) begin
 end
 
 function δ(q, σ) begin
+	if q="A" && σ='@' then
+		return "B"
+	if q="B" && σ∈{'a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z',
+	'A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'}then
+		return "B"
+	elseif q="B"&& σ∈{'{'} then
+		return "C"
+		end
+	if q="C"&&σ∈{'0', '1', '2', '3','4', '5', '6' , '7', '8', '9',
+	'a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z',
+	'A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'} then
+		return "C"
+	elseif q="C" &&σ∈{','}then
+		return "D"
+		end
+	if q="D"&&σ∈{'0', '1', '2', '3','4', '5', '6' , '7', '8', '9',
+	'a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z',
+	'A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'} then
+		return "D"
+	elseif q="D"&&σ∈{'='} then
+		return "E"
+	elseif  q="D"&&σ∈{'}'}then
+		return "H"
+		end
+	if q="E" && σ∈{'{'} then
+		return "F"
+		end
+	if q = "F" && σ∈{'a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z',
+	'A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z',','}then
+		return  "F"
+	elseif q="F"&& σ∈{'}'} then
+		return "G"
+	end
+	if q="G"&& σ∈{','}then
+		return "H"
+	end
+	end
+	
 end
 
 function g(q) begin
+	if q="A" then
+		return λ
+	elseif q="B" then
+		return λ
+	elseif q="C" then
+		return λ
+	elseif q="D" then
+		return λ
+	elseif q="E" then
+		return λ
+	elseif q="F" then
+		return λ
+	elseif q="G" then
+		return λ
+	elseif q="H" then
+		return λ
+		
+	end
 	
 end
 

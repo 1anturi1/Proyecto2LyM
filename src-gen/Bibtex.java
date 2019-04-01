@@ -77,6 +77,88 @@ public final class Bibtex {
     Object $result=null;
     $try:try {
       $line=20;
+      if (($opEqualY(q,"A")&&$opEqualY(\u03C3,'@'))) {
+        $line=21;
+        $result="B";
+        if (true) break $try;
+        $line=22;
+        if (($opEqualY(q,"B")&&$opMembrY(\u03C3,GCollections.asSet('a','b','c','d','e','f','g','h','i','j','k','l','m','n','\u00F1','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','\u00D1','O','P','Q','R','S','T','U','V','W','X','Y','Z')))) {
+          $line=24;
+          $result="B";
+          if (true) break $try;
+        }
+        else {
+          $line=25;
+          if (($opEqualY(q,"B")&&$opMembrY(\u03C3,GCollections.asSet('{')))) {
+            $line=26;
+            $result="C";
+            if (true) break $try;
+          }
+        }
+        $line=28;
+        if (($opEqualY(q,"C")&&$opMembrY(\u03C3,GCollections.asSet('0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n','\u00F1','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','\u00D1','O','P','Q','R','S','T','U','V','W','X','Y','Z')))) {
+          $line=31;
+          $result="C";
+          if (true) break $try;
+        }
+        else {
+          $line=32;
+          if (($opEqualY(q,"C")&&$opMembrY(\u03C3,GCollections.asSet(',')))) {
+            $line=33;
+            $result="D";
+            if (true) break $try;
+          }
+        }
+        $line=35;
+        if (($opEqualY(q,"D")&&$opMembrY(\u03C3,GCollections.asSet('0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n','\u00F1','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','\u00D1','O','P','Q','R','S','T','U','V','W','X','Y','Z')))) {
+          $line=38;
+          $result="D";
+          if (true) break $try;
+        }
+        else {
+          $line=39;
+          if (($opEqualY(q,"D")&&$opMembrY(\u03C3,GCollections.asSet('=')))) {
+            $line=40;
+            $result="E";
+            if (true) break $try;
+          }
+          else {
+            $line=41;
+            if (($opEqualY(q,"D")&&$opMembrY(\u03C3,GCollections.asSet('}')))) {
+              $line=42;
+              $result="H";
+              if (true) break $try;
+            }
+          }
+        }
+        $line=44;
+        if (($opEqualY(q,"E")&&$opMembrY(\u03C3,GCollections.asSet('{')))) {
+          $line=45;
+          $result="F";
+          if (true) break $try;
+        }
+        $line=47;
+        if (($opEqualY(q,"F")&&$opMembrY(\u03C3,GCollections.asSet('a','b','c','d','e','f','g','h','i','j','k','l','m','n','\u00F1','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','\u00D1','O','P','Q','R','S','T','U','V','W','X','Y','Z',',')))) {
+          $line=49;
+          $result="F";
+          if (true) break $try;
+        }
+        else {
+          $line=50;
+          if (($opEqualY(q,"F")&&$opMembrY(\u03C3,GCollections.asSet('}')))) {
+            $line=51;
+            $result="G";
+            if (true) break $try;
+          }
+        }
+        $line=53;
+        if (($opEqualY(q,"G")&&$opMembrY(\u03C3,GCollections.asSet(',')))) {
+          $line=54;
+          $result="H";
+          if (true) break $try;
+        }
+      }
+      $line=58;
       $rethrow(new RuntimeException("The function \"\u03B4(q:Object,\u03C3:Object)\" did not return a value."));
     }
     catch (Throwable $throwable) {
@@ -88,7 +170,69 @@ public final class Bibtex {
     int $line=0;
     Object $result=null;
     $try:try {
-      $line=24;
+      $line=61;
+      if ($opEqualY(q,"A")) {
+        $line=62;
+        $result="";
+        if (true) break $try;
+      }
+      else {
+        $line=63;
+        if ($opEqualY(q,"B")) {
+          $line=64;
+          $result="";
+          if (true) break $try;
+        }
+        else {
+          $line=65;
+          if ($opEqualY(q,"C")) {
+            $line=66;
+            $result="";
+            if (true) break $try;
+          }
+          else {
+            $line=67;
+            if ($opEqualY(q,"D")) {
+              $line=68;
+              $result="";
+              if (true) break $try;
+            }
+            else {
+              $line=69;
+              if ($opEqualY(q,"E")) {
+                $line=70;
+                $result="";
+                if (true) break $try;
+              }
+              else {
+                $line=71;
+                if ($opEqualY(q,"F")) {
+                  $line=72;
+                  $result="";
+                  if (true) break $try;
+                }
+                else {
+                  $line=73;
+                  if ($opEqualY(q,"G")) {
+                    $line=74;
+                    $result="";
+                    if (true) break $try;
+                  }
+                  else {
+                    $line=75;
+                    if ($opEqualY(q,"H")) {
+                      $line=76;
+                      $result="";
+                      if (true) break $try;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      $line=80;
       $rethrow(new RuntimeException("The function \"g(q:Object)\" did not return a value."));
     }
     catch (Throwable $throwable) {
@@ -100,10 +244,10 @@ public final class Bibtex {
     int $line=0;
     Object $result=null;
     $try:try {
-      $line=28;
+      $line=84;
       $result="";
       if (true) break $try;
-      $line=29;
+      $line=85;
       $rethrow(new RuntimeException("The function \"h(q:Object,\u03C3:Object)\" did not return a value."));
     }
     catch (Throwable $throwable) {
