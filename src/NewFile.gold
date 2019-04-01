@@ -1,0 +1,10 @@
+using gold.** 
+procedure main(args:String[]) begin
+	Q:={"A", "B" }
+	Σ:={'c','a'}
+ 	q₀:="A"
+ 	F:={"B"}
+	M:=⟦⟦"A",'a',"A"⟧,⟦"A",'c',"B"⟧ ⟧
+	N := GNondeterministicAutomaton(Q,Σ,q₀,F,M)
+	GAutomataFrame().show(N) 
+end
